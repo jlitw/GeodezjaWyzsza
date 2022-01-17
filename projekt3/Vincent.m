@@ -21,7 +21,7 @@ function [ sAB, Aab, Aba] = Vincent(fiA, lamA, fiB, lamB)
     %4
     L=deltlamb;
     Lb = 100;
-    eps = 0.000001/3600;
+    eps = deg2rad(0.000001/3600);
     % 4 
     while abs(L-Lb)>=eps
         % 5
